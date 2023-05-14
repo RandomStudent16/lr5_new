@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    <link rel="stylesheet" href="/index.4ee4707b.css"> <!--styles link is always the LAST link-->
+    <title>Praktikum 4</title>
+</head>
+
+<body>
+
+
+    <!--Bootstrap slider-->
+    <div id="MyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#MyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+            </li>
+            <li data-bs-target="#MyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li data-bs-target="#MyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay">
+                    <img src="/slide%20111.4e21a7da.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="text-for-slide">
+                    <h1>さくらが好き</h1>
+                    <div class="main-text">
+                        <p>
+                            お客様自身、
+                            お客様が会社のアディピシングを追求できるようになります。
+                            賢者の職務によって、人生の苦痛そのものが、それらによって堕落した時代の喜びに結び付けられます。
+                            彼らは知りません、彼らは人生の労働の時に選ばれ、痛みから解放されました!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay">
+                    <img src="/slide1.45a42fa9.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="text-for-slide">
+                    <h1>さくらが好き</h1>
+                    <p>お客様自身、
+                        お客様が会社のアディピシングを追求できるようになります。
+                        賢者の職務によって、人生の苦痛そのものが、それらによって堕落した時代の喜びに結び付けられます。
+                        彼らは知りません、彼らは人生の労働の時に選ばれ、痛みから解放されました! </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay">
+                    <img src="/slide11.b3e18861.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="text-for-slide">
+                    <h1>さくらが好き</h1>
+                    <p>お客様自身、
+                        お客様が会社のアディピシングを追求できるようになります。
+                        賢者の職務によって、人生の苦痛そのものが、それらによって堕落した時代の喜びに結び付けられます。
+                        彼らは知りません、彼らは人生の労働の時に選ばれ、痛みから解放されました! </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#MyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#MyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+
+    <div class="prom" style="height: 10px"></div>
+
+    <!--Bootstrap modal window-->
+    <div class="container">
+        <div class="row">
+            <div class="col-nd-12">
+                <div class="modal fade" id="bmodal"> <!--because of "fade" my modal is just not visible-->
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                更新
+                            </div>
+                            <div class="modal-body">
+                                ジョン-シナは最後の仕事でここにいたが、今ここに素敵な庭があるでしょう
+                            </div>
+                            <div class="modal-footer">
+                                <input class="btn btn-primary" value="これを閉じます" data-bs-dismiss="modal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" data-bs-toggle="modal" data-bs-target="#bmodal" style="color: #000; text-decoration: none">これを開く // bootstrap</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="prom" style="height: 10px"></div>
+
+    <div class="overlay-for-modal" id="modal-2">
+        <div class="flex-popap">
+            <div class="popap">
+                <div class="close" id="button-close">これを閉じます</div>
+                <img style="max-width: 100%; display: block" src="/slide%20111.4e21a7da.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="open">これを開く // jquery</div>
+    </div>
+
+    <div class="jqslider">
+        <div class="left"> <- </div>
+                <div class="slider-content">
+                    <div class="back-images">
+                        <img class="img active" src="/slide1.45a42fa9.jpg" alt="">
+                        <img class="img" src="/slide11.b3e18861.jpg" alt="">
+                        <img class="img" src="/slide%20111.4e21a7da.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right"> -> </div>
+        </div>
+    <script src="/index.f7b1f880.js" defer=""></script>
+</body>
+
+</html>

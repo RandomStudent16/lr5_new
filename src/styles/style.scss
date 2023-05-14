@@ -1,0 +1,157 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    background-color: #777;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    background-color: cornsilk;
+    width: 250px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-for-slide {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 10; 
+    right: 0;
+    padding-bottom: 58px;
+    text-align:center;
+}
+
+.main-text {
+    padding: 10 0 10;
+    text-align: left;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+li::marker{font-size:0;}
+
+.jqslider{
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.img {
+    display: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.non-active {
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.left, .right {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.right {
+    right: 0;
+}
+
+.overlay-for-modal {
+    position: fixed;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.flex-popap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popap {
+    position: relative;
+    max-width: 600px;
+    background-color: black;
+    overflow: auto;
+}
+
+.open {
+    color: black; 
+    cursor: pointer; 
+    background-color: cornsilk;
+    width: 250px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#button-close {
+    position: absolute; 
+    cursor: pointer;
+    color: black;
+    background-color: cornsilk;
+    width: 100px;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+}
